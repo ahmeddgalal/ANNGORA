@@ -1,0 +1,380 @@
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.gear{
+    position: relative;
+}
+
+.demo{
+    transition: 1s;
+    background-color: black;
+    position: fixed;
+    top:200px
+    
+    
+
+}
+
+.demo:hover{
+    background-color:rgb(176, 176, 176,0.3) ;
+    transition: 1s;
+    
+}
+
+.h-slide1 {
+   
+    font-weight: 900;
+    font-size: 4.5rem;
+    
+}
+.h2-slide1{
+   
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-bottom: 250px;
+}
+.h3-slide1{
+   
+    font-weight: 900;
+    font-size: 4.5rem;
+    margin-bottom: 10px;
+}
+
+
+.me-8{
+    margin-right: 200px;
+}
+.ms-8{
+    margin-left: 150px;
+}
+
+
+.txt-hov:hover a{
+    
+    color:#f25454 !important; 
+    transition: 0.5s;
+
+}
+.txt-hov a{
+    transition: 0.5s;
+
+}
+
+.carousel-control-next, .carousel-control-prev{
+    top: 50%;
+    bottom: 45%;
+    justify-content: start;
+    border: solid 1px white;
+    width: 50px;
+    height: 50px;
+    
+}
+
+
+.carou-100{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/slideshow-1.jpg);
+}
+
+.slide2{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/slideshow-2.jpg);
+}
+.slide3{
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(../images/slideshow-3.jpg);
+}
+
+.m-20{
+    margin-top: 50px;
+}
+
+
+.bt-prev:hover .prev-hov{
+    background-color: white;
+    transition: 0.5s;
+}
+.bt-prev:hover i{
+    color:#f25454;
+    transition: 0.5s;
+}
+
+
+
+.bt-next:hover .next-hov{
+    background-color: white;
+    transition: 0.5s;
+}
+.bt-next:hover i{
+    color:#f25454;
+    transition: 0.5s;
+}
+
+
+.carousel-control-prev-icon {
+    background-image: none;
+}
+.carousel-control-next-icon {
+    background-image: none;
+}
+
+
+
+.icons a{
+    
+    color: white;
+}
+
+
+/* about section */
+.scroll{
+    width: 30px;
+    height: 10px;
+    border: solid 1px white;
+    padding: 20px 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;    
+}
+.scroll:hover{
+    border: red solid 1px;
+    transition: 0.5;
+}
+
+.point{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:15px;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    animation: point 1s infinite;
+
+}
+.scroll:hover .point{
+    background-color: red;
+    transition: 0.5;
+}
+
+
+@keyframes point
+{
+    0%{top:0px;}
+    5%{top:1px;}
+    10%{top:2px;}
+    15%{top:3px;}
+    20%{top:4px;}
+    25%{top:5px;}
+    30%{top:6px;}
+    35%{top:7px;}
+    40%{top:8px;}
+    45%{top:9px;}
+    50%{top:10px;}
+    55%{top:11px;}
+    60%{top:12px;}
+    65%{top:13px;}
+    70%{top:15px;}
+    75%{top:16px;}
+    80%{top:18px;}
+    85%{top:19px;}
+    90%{top:20px;}
+    95%{top:21px;}
+    100%{top:22;opacity: 0;}
+}
+
+
+
+.fs-8{
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 38px;
+    
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+.fs-10{
+    font-weight:900;
+    font-size: 70px;
+    color: rgb(0, 0, 0,0.1);
+}
+
+.hr{
+    background-color: black;
+    width: 50px;
+    height: 1px;   
+}
+
+.heading{
+    transition-duration: 1s;
+    transition-property:all;
+}
+
+.heading:hover .hr {
+    width: 100px;
+    transition-duration: 1s;
+}
+
+.py-10{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.progress{
+    height: 5px;
+}
+
+.progress1{
+    position:absolute;
+    top: 0px;
+    right:20px;
+}
+.progress-bar{
+    background-color: #f25454;
+}
+
+/* about section  */
+
+.card{
+    border: unset;
+}
+
+/* our team section */
+.card-body{
+    text-align: center;
+}
+.animate{
+transition: 0.2s 0.2s;
+}
+
+.animate:hover{
+    transform: scale(1.2);
+    transition: 0.2s;   
+}
+
+.layer{
+    background-color: #f25454;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.animate:hover .layer{
+    opacity: 0.7;
+    transition: 0.3s;    
+}
+
+.animateh5:hover .card-body{
+    color: #f25454;
+}
+
+/* services section  */
+.bg-serv{
+    background-color: #fafafa;
+}
+
+.cotent h5{
+    transition: 0.5s;
+
+}
+
+.cotent:hover h5{
+    color: #f25454;
+    transition: 0.5s;
+}
+
+/*  Client Reviews section  */
+.m-size{
+    width: 500px;
+    height: 500px;
+}
+.bg-caption{
+    background-color: rgb(242, 84, 84,0.6);
+}
+
+/* get in touch section  */
+.bg-get{
+    background-color: #fafafa;
+}
+.info h5{
+    transition: 0.5s;
+}
+.info:hover h5{
+    color: #f25454;
+    transition: 0.5s;
+}
+
+/* contact  */
+.bg-contact{
+    background-color: #343a40;
+}
+.txt-contact{
+    color:#b0b0b0;
+}
+
+.parent{
+    width: 100%;
+    position: absolute;
+}
+.child{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color:rgb(242, 84, 84,0.4);
+    position: absolute;
+    top:-30px;
+    left:50%;
+    transform: translateX(-50%);    
+}
+
+.child:hover{
+    background-color: #f25454;
+    transition: 0.5s;
+}
+
+.styl{
+    text-decoration: none;
+    padding: 2px;
+    border: solid 1px white;
+    transition-duration: 1s;
+    transition-property: all;
+}
+.btn-hov:hover .styl{
+    color: red !important;
+    border: solid 1px red;
+}
+
+.ico-hov i{
+
+    transition: 0.5s;
+}
+
+.ico-hov:hover i{
+    color: #f25454 !important;
+
+}
+
+.angora-hov:hover{
+    
+    color: red !important;
+    transition: 0.5s;
+}
